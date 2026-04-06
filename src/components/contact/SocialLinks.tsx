@@ -14,9 +14,9 @@ const socialIcons = {
 
 export function SocialLinks({ size = 'md', className }: SocialLinksProps) {
   const links = [
-    { href: profile.linkedin, icon: 'linkedin', label: 'LinkedIn' },
-    { href: profile.whatsapp ? `https://wa.me/${profile.whatsapp?.replace(/\D/g, '')}` : null, icon: 'whatsapp', label: 'WhatsApp' },
-  ].filter((link) => link.href);
+    ...(profile.linkedin ? [{ href: profile.linkedin, icon: 'linkedin' as const, label: 'LinkedIn' }] : []),
+    ...(profile.whatsapp ? [{ href: `https://wa.me/${profile.whatsapp.replace(/\D/g, '')}`, icon: 'whatsapp' as const, label: 'WhatsApp' }] : []),
+  ];
 
   const sizes = {
     sm: 'p-1.5 w-8 h-8',
