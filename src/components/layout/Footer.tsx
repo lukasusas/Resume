@@ -3,9 +3,9 @@ import { Linkedin, MessageCircle, Heart } from 'lucide-react';
 import { profile } from '@/data/profile';
 
 const socialLinks = [
-  { href: profile.linkedin, icon: Linkedin, label: 'LinkedIn' },
-  { href: profile.whatsapp ? `https://wa.me/${profile.whatsapp?.replace(/\D/g, '')}` : null, icon: MessageCircle, label: 'WhatsApp' },
-].filter((link) => link.href);
+  ...(profile.linkedin ? [{ href: profile.linkedin, icon: Linkedin, label: 'LinkedIn' }] : []),
+  ...(profile.whatsapp ? [{ href: `https://wa.me/${profile.whatsapp.replace(/\D/g, '')}`, icon: MessageCircle, label: 'WhatsApp' }] : []),
+];
 
 const footerLinks = [
   { href: '/', label: 'Home' },
