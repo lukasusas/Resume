@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui';
+import { ExperienceIcon } from './ExperienceIcons';
 import type { Experience } from '@/data/experience';
 
 interface ExperienceCardProps {
@@ -16,8 +17,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
     <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-800">
       <div className="flex flex-col sm:flex-row sm:items-start gap-4 mb-4">
-        {/* Company Logo Placeholder */}
-        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex-shrink-0" />
+        <ExperienceIcon experience={experience} />
 
         <div className="flex-1">
           <h3 className="font-semibold text-lg text-gray-900 dark:text-white">

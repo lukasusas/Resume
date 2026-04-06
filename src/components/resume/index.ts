@@ -1,6 +1,7 @@
 export { ProfileHeader } from './ProfileHeader';
 export { Summary } from './Summary';
 export { ExperienceCard } from './ExperienceCard';
+export { ExperienceIcon } from './ExperienceIcons';
 export { ExperienceTimeline } from './ExperienceTimeline';
 export { SkillBar } from './SkillBar';
 export { SkillsSection } from './SkillsSection';
