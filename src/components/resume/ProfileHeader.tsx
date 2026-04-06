@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Globe, Download } from 'lucide-react';
+import { MapPin, Download } from 'lucide-react';
 import { profile } from '@/data/profile';
 import { Button } from '@/components/ui';
 import { SocialLinks } from '@/components/contact/SocialLinks';
@@ -28,30 +28,10 @@ export function ProfileHeader() {
 
         {/* Contact Info */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600 dark:text-gray-400 mb-6">
-          <a
-            href={`mailto:${profile.email}`}
-            className="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <Mail className="w-4 h-4" />
-            {profile.email}
-          </a>
-          <span className="flex items-center gap-1.5">
-            <Phone className="w-4 h-4" />
-            {profile.phone}
-          </span>
           <span className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
             {profile.location}
           </span>
-          <a
-            href={profile.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <Globe className="w-4 h-4" />
-            Portfolio
-          </a>
         </div>
 
         {/* Actions */}

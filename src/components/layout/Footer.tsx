@@ -1,13 +1,11 @@
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, Mail, Heart } from 'lucide-react';
+import { Linkedin, MessageCircle, Heart } from 'lucide-react';
 import { profile } from '@/data/profile';
 
 const socialLinks = [
-  { href: profile.github, icon: Github, label: 'GitHub' },
   { href: profile.linkedin, icon: Linkedin, label: 'LinkedIn' },
-  { href: profile.twitter, icon: Twitter, label: 'Twitter' },
-  { href: `mailto:${profile.email}`, icon: Mail, label: 'Email' },
-];
+  { href: profile.whatsapp ? `https://wa.me/${profile.whatsapp?.replace(/\D/g, '')}` : null, icon: MessageCircle, label: 'WhatsApp' },
+].filter((link) => link.href);
 
 const footerLinks = [
   { href: '/', label: 'Home' },

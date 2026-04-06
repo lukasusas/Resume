@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { profile } from '@/data/profile';
 import { experience } from '@/data/experience';
 import { skillCategories, getSkillsByCategory, languages } from '@/data/skills';
@@ -24,14 +25,27 @@ export default function PrintPage() {
       <header className="print-header mb-8 border-b pb-6">
         <h1 className="text-3xl font-bold mb-1">{profile.name}</h1>
         <p className="text-xl text-gray-600 mb-4">{profile.title}</p>
-        <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-          <span>{profile.email}</span>
-          <span>•</span>
-          <span>{profile.phone}</span>
-          <span>•</span>
-          <span>{profile.location}</span>
-          <span>•</span>
-          <span>{profile.website}</span>
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-gray-600">{profile.location}</span>
+          <div className="flex items-center gap-4">
+            {profile.linkedin && (
+              <a href={profile.linkedin} className="text-blue-600 hover:text-blue-800 text-sm underline">
+                LinkedIn: {profile.linkedin.split('/').pop()}
+              </a>
+            )}
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-xs text-gray-600 font-medium">WhatsApp</span>
+              <div className="w-16 h-16 flex-shrink-0">
+                <Image
+                  src="/whatsapp-qr.png"
+                  alt="WhatsApp QR Code"
+                  width={64}
+                  height={64}
+                  className="border border-gray-300"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 

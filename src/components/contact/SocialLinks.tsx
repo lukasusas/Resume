@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Globe } from 'lucide-react';
+import { Linkedin, MessageCircle } from 'lucide-react';
 import { profile } from '@/data/profile';
 import { cn } from '@/lib/utils';
 
@@ -8,18 +8,14 @@ interface SocialLinksProps {
 }
 
 const socialIcons = {
-  github: Github,
   linkedin: Linkedin,
-  twitter: Twitter,
-  website: Globe,
+  whatsapp: MessageCircle,
 };
 
 export function SocialLinks({ size = 'md', className }: SocialLinksProps) {
   const links = [
-    { href: profile.github, icon: 'github', label: 'GitHub' },
     { href: profile.linkedin, icon: 'linkedin', label: 'LinkedIn' },
-    { href: profile.twitter, icon: 'twitter', label: 'Twitter' },
-    { href: profile.website, icon: 'website', label: 'Website' },
+    { href: profile.whatsapp ? `https://wa.me/${profile.whatsapp?.replace(/\D/g, '')}` : null, icon: 'whatsapp', label: 'WhatsApp' },
   ].filter((link) => link.href);
 
   const sizes = {

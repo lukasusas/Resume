@@ -61,6 +61,9 @@ export interface Profile {
   /** LinkedIn profile URL (optional) */
   linkedin?: string;
 
+  /** WhatsApp number (optional) */
+  whatsapp?: string;
+
   /** GitHub profile URL (optional) */
   github?: string;
 
@@ -99,14 +102,13 @@ export const profile: Profile = {
   name: 'Lukas Usaris',
   title: 'Strategy & Operations Manager',
   photo: 'https://assets.kiloapps.io/user_f6db4d38-3251-4664-9b59-7bf2191c924f/56e14505-937b-4667-a707-960f81828843/c180f8ad-6e4d-4eb7-b485-35da54a5cade.jpg',
-  email: 'lukas@usaris.lt',
   location: 'Vilnius, Lithuania',
 
   // -------------------------------------------------------------------------
   // CONTACT & SOCIAL (Optional - remove or set to undefined if not needed)
   // -------------------------------------------------------------------------
-  phone: '+370 650 24544',
   linkedin: 'https://linkedin.com/in/lukas-usaris',
+  whatsapp: '+370 650 24544',
 
   // -------------------------------------------------------------------------
   // PROFESSIONAL SUMMARY
