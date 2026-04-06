@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   description: profile.summary,
   keywords: ['resume', 'portfolio', 'developer', 'software engineer'],
   authors: [{ name: profile.name }],
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: `${profile.name} | ${profile.title}`,
     description: profile.summary,
