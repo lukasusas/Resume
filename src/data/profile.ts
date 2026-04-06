@@ -40,8 +40,8 @@ export interface Profile {
    */
   photo: string;
 
-  /** Professional email address */
-  email: string;
+  /** Professional email address (optional) */
+  email?: string;
 
   /**
    * Phone number (optional)

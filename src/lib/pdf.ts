@@ -19,8 +19,12 @@ export function generateTextResume(): string {
   lines.push(profile.name.toUpperCase());
   lines.push(profile.title);
   lines.push('');
-  lines.push(`Email: ${profile.email} | Phone: ${profile.phone}`);
-  lines.push(`Location: ${profile.location} | Website: ${profile.website}`);
+
+  const contactInfo: string[] = [];
+  if (profile.linkedin) contactInfo.push(`LinkedIn: ${profile.linkedin}`);
+  if (profile.whatsapp) contactInfo.push(`WhatsApp: ${profile.whatsapp}`);
+  lines.push(contactInfo.join(' | '));
+  lines.push(`Location: ${profile.location}`);
   lines.push('');
   lines.push('═'.repeat(60));
   lines.push('');
