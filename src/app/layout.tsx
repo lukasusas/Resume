@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { Header, Footer, SideNav } from '@/components/layout';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { profile } from '@/data/profile';
@@ -47,6 +48,7 @@ export default function RootLayout({
         <main className="pt-16">{children}</main>
         <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
