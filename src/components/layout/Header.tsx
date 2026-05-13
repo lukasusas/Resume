@@ -67,13 +67,21 @@ export function Header({
             </Button>
           </nav>
 
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-            aria-label={toggleMenuLabel}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher
+              currentLocale={locale}
+              languageNames={languageNames}
+              label={switchLanguageLabel}
+              compact
+            />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              aria-label={toggleMenuLabel}
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         <div
@@ -93,14 +101,6 @@ export function Header({
                 {item.label}
               </Link>
             ))}
-            <div className="px-4 pt-2">
-              <LanguageSwitcher
-                currentLocale={locale}
-                languageNames={languageNames}
-                label={switchLanguageLabel}
-                compact
-              />
-            </div>
             <div className="px-4 pt-2">
               <Button href={getLocalizedPath(locale, '/print')} size="sm" className="w-full">
                 <Download className="w-4 h-4 mr-2" />
