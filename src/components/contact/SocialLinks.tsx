@@ -1,8 +1,10 @@
 import { Linkedin, MessageCircle } from 'lucide-react';
-import { profile } from '@/data/profile';
+import type { LocaleUi, Profile } from '@/content/types';
 import { cn } from '@/lib/utils';
 
 interface SocialLinksProps {
+  profile: Pick<Profile, 'linkedin' | 'whatsapp'>;
+  common: Pick<LocaleUi, 'common'>['common'];
   size?: 'sm' | 'md' | 'lg';
   className?: string;
 }
@@ -12,10 +14,12 @@ const socialIcons = {
   whatsapp: MessageCircle,
 };
 
-export function SocialLinks({ size = 'md', className }: SocialLinksProps) {
+export function SocialLinks({ profile, common, size = 'md', className }: SocialLinksProps) {
   const links = [
-    ...(profile.linkedin ? [{ href: profile.linkedin, icon: 'linkedin' as const, label: 'LinkedIn' }] : []),
-    ...(profile.whatsapp ? [{ href: `https://wa.me/${profile.whatsapp.replace(/\D/g, '')}`, icon: 'whatsapp' as const, label: 'WhatsApp' }] : []),
+    ...(profile.linkedin ? [{ href: profile.linkedin, icon: 'linkedin' as const, label: common.linkedin }] : []),
+    ...(profile.whatsapp
+      ? [{ href: `https://wa.me/${profile.whatsapp.replace(/\D/g, '')}`, icon: 'whatsapp' as const, label: common.whatsapp }]
+      : []),
   ];
 
   const sizes = {

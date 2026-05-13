@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="estateTitle estateDesc">
+  <title id="estateTitle">Real estate placeholder</title>
+  <desc id="estateDesc">Abstract illustration for real estate sales project.</desc>
+  <defs>
+    <linearGradient id="estateBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#estateBg)" rx="40" />
+  <g fill="#ecfeff">
+    <path d="M220 520l210-180 190 150V660H220z" opacity="0.92" />
+    <path d="M530 540l210-210 240 190V660H530z" opacity="0.82" />
+    <rect x="310" y="550" width="70" height="110" fill="#164e63" opacity="0.7" />
+    <rect x="610" y="560" width="78" height="100" fill="#164e63" opacity="0.7" />
+    <rect x="775" y="555" width="70" height="60" fill="#164e63" opacity="0.7" />
+  </g>
+  <g fill="#f0fdfa" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="140" font-size="56" font-weight="700">Real Estate Sales</text>
+    <text x="600" y="690" font-size="28" opacity="0.88">Valuation • Acquisition • Negotiation</text>
+  </g>
+</svg>

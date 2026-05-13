@@ -5,7 +5,7 @@ import {
   Cloud,
   Handshake,
 } from 'lucide-react';
-import type { Experience } from '@/data/experience';
+import type { Experience } from '@/content/types';
 
 interface ExperienceIconProps {
   experience: Experience;
@@ -21,7 +21,7 @@ export function ExperienceIcon({ experience }: ExperienceIconProps) {
   };
 
   return (
-    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0 text-white">
+    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0 text-white">
       {iconMap[experience.id]}
     </div>
   );

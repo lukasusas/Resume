@@ -1,13 +1,19 @@
 import Image from 'next/image';
 import { MapPin, Download } from 'lucide-react';
-import { profile } from '@/data/profile';
+import type { Locale, LocaleUi, Profile } from '@/content/types';
 import { Button } from '@/components/ui';
 import { SocialLinks } from '@/components/contact/SocialLinks';
+import { getLocalizedPath } from '@/i18n/routing';
 
-export function ProfileHeader() {
+interface ProfileHeaderProps {
+  locale: Locale;
+  profile: Profile;
+  ui: Pick<LocaleUi, 'actions' | 'common'>;
+}
+
+export function ProfileHeader({ locale, profile, ui }: ProfileHeaderProps) {
   return (
     <header className="flex flex-col md:flex-row items-center gap-8 mb-12">
-      {/* Profile Photo */}
       <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-blue-600 shadow-lg flex-shrink-0 bg-gray-200 dark:bg-gray-700 mt-[23px]">
         <Image
           src={profile.photo}
@@ -34,12 +40,11 @@ export function ProfileHeader() {
           </span>
         </div>
 
-        {/* Actions */}
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <SocialLinks />
-          <Button href="/print">
+          <SocialLinks profile={profile} common={ui.common} />
+          <Button href={getLocalizedPath(locale, '/print')}>
             <Download className="w-4 h-4 mr-2" />
-            View Resume
+            {ui.actions.viewResume}
           </Button>
         </div>
       </div>

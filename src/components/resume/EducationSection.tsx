@@ -2,12 +2,26 @@
 
 import { motion } from 'framer-motion';
 import { GraduationCap, MapPin, Award } from 'lucide-react';
-import { education } from '@/data/education';
+import type { Education } from '@/content/types';
 import { Section, Badge, Card, CardContent } from '@/components/ui';
 
-export function EducationSection() {
+interface EducationSectionProps {
+  title: string;
+  subtitle: string;
+  degreeSeparator: string;
+  gpaLabel: string;
+  education: Education[];
+}
+
+export function EducationSection({
+  title,
+  subtitle,
+  degreeSeparator,
+  gpaLabel,
+  education,
+}: EducationSectionProps) {
   return (
-    <Section id="education" title="Education" subtitle="Academic background and qualifications">
+    <Section id="education" title={title} subtitle={subtitle}>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {education.map((edu, index) => (
           <motion.div
@@ -25,7 +39,9 @@ export function EducationSection() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 dark:text-white">
-                      {edu.degree} in {edu.field}
+                      {edu.degree}
+                      {degreeSeparator ? ` ${degreeSeparator} ` : ' '}
+                      {edu.field}
                     </h3>
                     <p className="text-blue-600 dark:text-blue-400 font-medium">
                       {edu.school}
@@ -36,7 +52,7 @@ export function EducationSection() {
                     </div>
                     {edu.gpa && (
                       <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        GPA: {edu.gpa}
+                        {gpaLabel}: {edu.gpa}
                       </p>
                     )}
                     {edu.honors && edu.honors.length > 0 && (

@@ -1,23 +1,41 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { projects, projectCategories, getProjectsByCategory } from '@/data/projects';
+import type { Locale, LocaleUi, Project } from '@/content/types';
 import { ProjectCard } from './ProjectCard';
 import { ProjectFilters } from './ProjectFilters';
 
 interface ProjectGridProps {
+  locale: Locale;
+  projects: Project[];
+  categories: string[];
+  labels: LocaleUi['portfolio'];
   showFilters?: boolean;
   limit?: number;
   featuredOnly?: boolean;
 }
 
-export function ProjectGrid({ showFilters = true, limit, featuredOnly = false }: ProjectGridProps) {
-  const [activeCategory, setActiveCategory] = useState('All');
+export function ProjectGrid({
+  locale,
+  projects,
+  categories,
+  labels,
+  showFilters = true,
+  limit,
+  featuredOnly = false,
+}: ProjectGridProps) {
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
+
+  useEffect(() => {
+    setActiveCategory(categories[0]);
+  }, [categories]);
 
   let displayProjects = featuredOnly
     ? projects.filter((p) => p.featured)
-    : getProjectsByCategory(activeCategory);
+    : activeCategory === categories[0]
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
 
   if (limit) {
     displayProjects = displayProjects.slice(0, limit);
@@ -27,7 +45,7 @@ export function ProjectGrid({ showFilters = true, limit, featuredOnly = false }:
     <div>
       {showFilters && !featuredOnly && (
         <ProjectFilters
-          categories={projectCategories}
+          categories={categories}
           activeCategory={activeCategory}
           onCategoryChange={setActiveCategory}
         />
@@ -44,7 +62,7 @@ export function ProjectGrid({ showFilters = true, limit, featuredOnly = false }:
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
             >
-              <ProjectCard project={project} />
+              <ProjectCard locale={locale} project={project} labels={labels} />
             </motion.div>
           ))}
         </AnimatePresence>
@@ -53,7 +71,7 @@ export function ProjectGrid({ showFilters = true, limit, featuredOnly = false }:
       {displayProjects.length === 0 && (
         <div className="text-center py-12">
           <p className="text-gray-500 dark:text-gray-400">
-            No projects found in this category.
+            {labels.noProjectsFound}
           </p>
         </div>
       )}

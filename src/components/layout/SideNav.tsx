@@ -2,22 +2,26 @@
 
 import Link from 'next/link';
 import { User, Briefcase, Code, GraduationCap, Folder, Mail } from 'lucide-react';
+import type { Locale, LocaleUi } from '@/content/types';
 import { cn } from '@/lib/utils';
-
-const navItems = [
-  { href: '/#about', label: 'About', icon: User },
-  { href: '/#experience', label: 'Experience', icon: Briefcase },
-  { href: '/#skills', label: 'Skills', icon: Code },
-  { href: '/#education', label: 'Education', icon: GraduationCap },
-  { href: '/portfolio', label: 'Portfolio', icon: Folder },
-  { href: '/#contact', label: 'Contact', icon: Mail },
-];
+import { getLocalizedPath, getLocalizedSectionHref } from '@/i18n/routing';
 
 interface SideNavProps {
+  locale: Locale;
+  navigation: LocaleUi['navigation'];
   className?: string;
 }
 
-export function SideNav({ className }: SideNavProps) {
+export function SideNav({ locale, navigation, className }: SideNavProps) {
+  const navItems = [
+    { href: getLocalizedSectionHref(locale, 'about'), label: navigation.about, icon: User },
+    { href: getLocalizedSectionHref(locale, 'experience'), label: navigation.experience, icon: Briefcase },
+    { href: getLocalizedSectionHref(locale, 'skills'), label: navigation.skills, icon: Code },
+    { href: getLocalizedSectionHref(locale, 'education'), label: navigation.education, icon: GraduationCap },
+    { href: getLocalizedPath(locale, '/portfolio'), label: navigation.portfolio, icon: Folder },
+    { href: getLocalizedSectionHref(locale, 'contact'), label: navigation.contact, icon: Mail },
+  ];
+
   return (
     <nav
       className={cn(

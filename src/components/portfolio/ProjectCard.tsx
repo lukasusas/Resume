@@ -5,14 +5,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
-import { Badge, Button } from '@/components/ui';
-import type { Project } from '@/data/projects';
+import { Badge } from '@/components/ui';
+import type { Locale, LocaleUi, Project } from '@/content/types';
+import { getLocalizedPath } from '@/i18n/routing';
 
 interface ProjectCardProps {
+  locale: Locale;
   project: Project;
+  labels: LocaleUi['portfolio'];
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ locale, project, labels }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -25,7 +28,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
       onMouseLeave={() => setIsHovered(false)}
       className="group relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300"
     >
-      {/* Thumbnail */}
       <div className="relative h-48 overflow-hidden">
         {project.thumbnail ? (
           <Image
@@ -35,10 +37,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
             className="object-cover"
           />
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500" />
         )}
-        
-        {/* Overlay on hover */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
@@ -50,7 +50,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white rounded-full text-gray-900 hover:bg-blue-500 hover:text-white transition-colors"
-              aria-label="View live site"
+              aria-label={labels.viewLiveSite}
             >
               <ExternalLink className="w-5 h-5" />
             </a>
@@ -61,22 +61,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white rounded-full text-gray-900 hover:bg-gray-900 hover:text-white transition-colors"
-              aria-label="View source code"
+              aria-label={labels.viewSource}
             >
               <Github className="w-5 h-5" />
             </a>
           )}
         </motion.div>
 
-        {/* Featured badge */}
         {project.featured && (
           <div className="absolute top-3 left-3">
-            <Badge variant="warning" size="sm">Featured</Badge>
+            <Badge variant="warning" size="sm">{labels.featuredBadge}</Badge>
           </div>
         )}
       </div>
 
-      {/* Content */}
       <div className="p-6">
         <div className="flex items-start justify-between gap-2 mb-2">
           <h3 className="font-semibold text-lg text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -89,7 +87,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.description}
         </p>
 
-        {/* Technologies */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {project.technologies.slice(0, 4).map((tech) => (
             <Badge key={tech} variant="default" size="sm">
@@ -103,12 +100,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
 
-        {/* View Project Link */}
         <Link
-          href={`/portfolio/${project.slug}`}
+          href={getLocalizedPath(locale, `/portfolio/${project.slug}`)}
           className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
         >
-          View Details
+          {labels.viewDetails}
           <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>

@@ -2,19 +2,33 @@
 
 import { motion } from 'framer-motion';
 import { Award, ExternalLink, Calendar } from 'lucide-react';
-import { certifications } from '@/data/education';
+import type { Certification, Locale } from '@/content/types';
 import { Section, Card, CardContent, Badge } from '@/components/ui';
+import { formatMonthYear } from '@/lib/date';
 
-export function CertificationsSection() {
-  const formatDate = (date: string) => {
-    return new Date(date + '-01').toLocaleDateString('en-US', {
-      month: 'short',
-      year: 'numeric',
-    });
-  };
+interface CertificationsSectionProps {
+  locale: Locale;
+  title: string;
+  subtitle: string;
+  certifications: Certification[];
+  issuedLabel: string;
+  expiresLabel: string;
+  viewCredentialLabel: string;
+  credentialIdLabel: string;
+}
 
+export function CertificationsSection({
+  locale,
+  title,
+  subtitle,
+  certifications,
+  issuedLabel,
+  expiresLabel,
+  viewCredentialLabel,
+  credentialIdLabel,
+}: CertificationsSectionProps) {
   return (
-    <Section title="Certifications" subtitle="Professional certifications and credentials">
+    <Section title={title} subtitle={subtitle}>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {certifications.map((cert, index) => (
           <motion.div
@@ -42,9 +56,9 @@ export function CertificationsSection() {
 
                 <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-500 mb-4">
                   <Calendar className="w-3.5 h-3.5" />
-                  <span>Issued {formatDate(cert.date)}</span>
+                  <span>{issuedLabel} {formatMonthYear(locale, cert.date)}</span>
                   {cert.expirationDate && (
-                    <span>· Expires {formatDate(cert.expirationDate)}</span>
+                    <span>· {expiresLabel} {formatMonthYear(locale, cert.expirationDate)}</span>
                   )}
                 </div>
 
@@ -56,13 +70,13 @@ export function CertificationsSection() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
                     >
-                      View Credential
+                      {viewCredentialLabel}
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   ) : (
                     cert.credentialId && (
                       <Badge variant="secondary" size="sm">
-                        ID: {cert.credentialId}
+                        {credentialIdLabel}: {cert.credentialId}
                       </Badge>
                     )
                   )}
