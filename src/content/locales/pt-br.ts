@@ -433,7 +433,7 @@ export const ptBrContent: LocaleContent = {
       printResume: 'Imprimir currículo',
     },
     actions: {
-      viewResume: 'Ver currículo',
+      viewResume: 'Baixar currículo',
       downloadResume: 'Baixar currículo',
       toggleMenu: 'Alternar menu',
       switchLanguage: 'Trocar idioma',

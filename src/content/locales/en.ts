@@ -433,7 +433,7 @@ export const enContent: LocaleContent = {
       printResume: 'Print Resume',
     },
     actions: {
-      viewResume: 'View Resume',
+      viewResume: 'Download Resume',
       downloadResume: 'Download Resume',
       toggleMenu: 'Toggle menu',
       switchLanguage: 'Switch language',

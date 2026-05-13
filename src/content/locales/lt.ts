@@ -433,7 +433,7 @@ export const ltContent: LocaleContent = {
       printResume: 'Spausdinti CV',
     },
     actions: {
-      viewResume: 'Žiūrėti CV',
+      viewResume: 'Atsisiųsti CV',
       downloadResume: 'Atsisiųsti CV',
       toggleMenu: 'Perjungti meniu',
       switchLanguage: 'Pakeisti kalbą',

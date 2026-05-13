@@ -433,7 +433,7 @@ export const ruContent: LocaleContent = {
       printResume: 'Печать резюме',
     },
     actions: {
-      viewResume: 'Открыть резюме',
+      viewResume: 'Скачать резюме',
       downloadResume: 'Скачать резюме',
       toggleMenu: 'Открыть меню',
       switchLanguage: 'Сменить язык',
