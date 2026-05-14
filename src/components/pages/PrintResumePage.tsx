@@ -46,6 +46,13 @@ export function PrintResumePage({ locale }: PrintResumePageProps) {
       <section className="mb-6">
         <h2 className="mb-2 text-lg font-bold uppercase tracking-wide">{content.ui.print.summary}</h2>
         <p className="text-gray-700">{content.profile.summary}</p>
+        {content.profile.highlights.length > 0 && (
+          <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-gray-700">
+            {content.profile.highlights.map((highlight) => (
+              <li key={highlight}>{highlight}</li>
+            ))}
+          </ul>
+        )}
       </section>
 
       <section className="mb-6">
