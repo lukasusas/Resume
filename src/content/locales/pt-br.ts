@@ -4,11 +4,13 @@ export const ptBrContent: LocaleContent = {
   locale: 'pt-br',
   meta: {
     defaultDescription:
-      'Atuo entre estratégia, operações, desenvolvimento de negócios, comércio internacional e investimentos imobiliários.',
+      'Lidero transformação em IA e atuo entre operações comerciais, finanças, desenvolvimento de negócios, comércio internacional e investimentos imobiliários.',
     keywords: [
       'estratégia',
       'operações',
       'desenvolvimento de negócios',
+      'transformação em IA',
+      'adoção de IA',
       'vendas B2B',
       'investimento imobiliário',
       'comércio internacional',
@@ -17,35 +19,60 @@ export const ptBrContent: LocaleContent = {
   },
   profile: {
     name: 'Lukas Usaris',
-    title: 'Operador Comercial | Finanças, Estratégia e Desenvolvimento de Negócios',
+    title: 'Head de Transformação em IA | Operações Comerciais e Entrega com IA',
     photo: '/profile/lukas-usaris.jpg',
     location: 'Vilnius, Lituânia',
     linkedin: 'https://linkedin.com/in/lukas-usaris',
     whatsapp: '+370 650 24544',
     summary:
-      'Atuo como operador comercial na interseção entre finanças, contratos, desenvolvimento de negócios e execução em empresas acompanhadas de perto pelos próprios fundadores. Transformo planos de crescimento e negociações complexas em execução estruturada por meio de planejamento financeiro, precificação, supervisão contratual e gestão de relacionamentos. Minha experiência passa por contas corporativas críticas para receita, comércio internacional e desenvolvimento residencial em crescimento, financiado com capital privado, no Brasil. Tenho mais valor em contextos nos quais julgamento, continuidade e comunicação clara fazem diferença.',
+      'Lidero o lado de negócios da transformação em IA na Saige Consulting, convertendo experimentos isolados em fluxos de trabalho reutilizáveis e mensuráveis para projetos de clientes e operações internas. Minha experiência passa por operações comerciais, finanças, contratos, desenvolvimento de negócios e execução em negócios conduzidos por fundadores. Meu foco é identificar problemas operacionais de maior valor, alinhar pessoas e soluções técnicas e avaliar resultados por margem, velocidade, qualidade e escalabilidade.',
     highlights: [
+      'Lidero a transformação em IA em toda a Saige Consulting, da seleção de pilotos à adoção dos fluxos de trabalho',
       'Negociei, fechei e mantive contratos acima de EUR 1 milhão por 3 anos consecutivos',
-      'Gerenciei cerca de 5 contas responsáveis por 60% a 80% da receita anual da empresa',
       'Fui um dos fundadores de um negócio de comércio de gemas que atingiu receita de seis dígitos nos primeiros 12 meses',
       'Fui um dos fundadores de uma incorporadora residencial em crescimento, financiada com capital privado, no Brasil',
     ],
   },
   experience: [
     {
+      id: 'exp-saige-ai',
+      title: 'Head de Transformação em IA',
+      company: 'Saige Consulting',
+      location: 'Vilnius, Lituânia / atuação global',
+      type: 'tempo integral',
+      startDate: '2026-07',
+      current: true,
+      description:
+        'Lidero o lado de negócios da transformação em IA em toda a Saige Consulting, transformando experimentos isolados em fluxos de trabalho reutilizáveis e mensuráveis para projetos de clientes, operações internas e, quando relevante, outras empresas do grupo. Identifico problemas operacionais de maior valor, defino o caso de negócio, métricas de sucesso, governança e exigências de revisão humana e coordeno com as equipes técnicas a implementação, os testes e a expansão de soluções para melhorar margem, velocidade de entrega, qualidade e escalabilidade.',
+      achievements: [
+        'Estruturo e priorizo um roadmap de transformação em IA para toda a Saige Consulting, avaliando impacto no negócio, viabilidade, risco, esforço, disponibilidade de dados e velocidade de validação',
+        'Lidero pilotos aplicados em projetos de clientes e operações internas para reduzir coordenação manual, retrabalho, custos e carga de especialistas técnicos seniores, preservando qualidade e confiança dos clientes',
+        'Defino métricas de base e acompanho resultados em horas economizadas, velocidade de entrega, margem, qualidade, retrabalho, adoção pelas equipes e reutilização entre projetos',
+        'Estabeleço regras práticas para propriedade dos fluxos, aprovação humana, revisão de qualidade, escalonamento e reutilização de fluxos de trabalho com IA entre equipes',
+        'Alinho liderança, operações globais, equipes técnicas e responsáveis pelos projetos para transformar pilotos validados em playbooks reutilizáveis e um modelo operacional escalável',
+      ],
+      technologies: [
+        'Transformação em IA',
+        'Desenho de Fluxos de Trabalho',
+        'Adoção e Governança de IA',
+        'Métricas Operacionais',
+        'Coordenação Multifuncional',
+      ],
+    },
+    {
       id: 'exp-1',
       title: 'Sócio-fundador, Investidor e Gestor Financeiro',
       company: 'Construtora PU',
       location: 'Paracuru, Ceará, Brasil',
       type: 'negócio próprio',
-      startDate: '2025-01',
+      startDate: '2025-09',
       current: true,
       description:
         'Sou sócio-fundador, investidor e responsável por finanças e contratos em uma incorporadora residencial Minha Casa Minha Vida (MCMV), financiada com capital privado, em Paracuru, Ceará. Atuo em uma função mais consultiva e de supervisão, com foco em planejamento financeiro, revisão contratual, relatórios e sistemas de apoio comercial.',
       achievements: [
         'Sou um dos quatro sócios, com participação igual, em uma incorporadora residencial MCMV em crescimento, financiada com capital privado, em Paracuru, Ceará',
         'Supervisiono planejamento financeiro, controle de despesas de capital e operacionais, revisão de contratos de empreiteiros e checagens financeiras antes de aprovação e assinatura',
-        'Hoje a operação inclui um projeto de 14 unidades em fase final, com 11 de 14 unidades já reservadas, e um projeto de 22 unidades em estágio inicial de execução, ambos com meta de ROI bruto em torno de 35% a 40% em ciclos inferiores a 1 ano',
+        'O desenvolvimento MCMV em andamento reúne 36 unidades: no DunaMar, 14 apartamentos estão em fase final de acabamento e certificação, com apenas 3 a 4 unidades restantes para venda; no DunaMar 2, são 22 unidades em dois prédios de apartamentos e duas casas, com o primeiro bloco próximo da conclusão e o segundo já em obra',
         'Crio e gerencio ferramentas operacionais como controles de disponibilidade para corretores, materiais de vendas, sites, planilhas e relatórios em PDF',
       ],
       technologies: [
@@ -227,9 +254,9 @@ export const ptBrContent: LocaleContent = {
       slug: 'brazil-residential-development',
       title: 'Construtora PU - Desenvolvimento Residencial MCMV',
       description:
-        'Sou um dos fundadores de uma incorporadora residencial em Paracuru, Ceará, financiada com capital privado, onde atuo como investidor e responsável por finanças e contratos nos projetos MCMV em andamento.',
+        'Sou um dos fundadores de uma incorporadora residencial em Paracuru, Ceará, financiada com capital privado, onde atuo como investidor e responsável por finanças e contratos em um portfólio MCMV ativo de 36 unidades.',
       longDescription:
-        'Na Construtora PU, sou um dos quatro sócios, com participação igual, em um negócio de desenvolvimento residencial em crescimento, financiado com capital privado, em Paracuru, Ceará, Brasil. Como investidor e gestor financeiro, atuo em uma função mais consultiva e de supervisão, acompanhando planejamento financeiro, controle de despesas de capital e operacionais, revisão de contratos de empreiteiros e ferramentas operacionais para corretores e apoio comercial. Hoje a operação inclui 2 projetos Minha Casa Minha Vida (MCMV): um empreendimento de 14 unidades em fase final, com 11 de 14 unidades já reservadas, e um projeto de 22 unidades em estágio inicial de execução. Ambos operam com ciclos inferiores a 1 ano e metas de ROI bruto na faixa de 35% a 40%.',
+        'Na Construtora PU, sou um dos quatro sócios, com participação igual, em um negócio de desenvolvimento residencial em crescimento, financiado com capital privado, em Paracuru, Ceará, Brasil. Como investidor e gestor financeiro, atuo em uma função mais consultiva e de supervisão, acompanhando planejamento financeiro, controle de despesas de capital e operacionais, revisão de contratos de empreiteiros e ferramentas operacionais para corretores e apoio comercial. O portfólio MCMV ativo reúne 36 unidades: o DunaMar, com 14 apartamentos em fase final de acabamento e certificação, tem apenas 3 a 4 unidades restantes para venda; o DunaMar 2 reúne 22 unidades em dois prédios de apartamentos e duas casas. O primeiro bloco do DunaMar 2 está próximo da conclusão, o segundo já está em obra e as casas formam uma etapa posterior. Um empreendimento separado, liderado por investidores, com 36 apartamentos está em planejamento.',
       thumbnail: '/projects/brazil-residential-development.jpg',
       images: ['/projects/brazil-residential-development.jpg'],
       technologies: [
@@ -240,14 +267,14 @@ export const ptBrContent: LocaleContent = {
       ],
       category: 'Imobiliário',
       role: 'Sócio-fundador, Investidor e Gestor Financeiro',
-      duration: '2025 - atual',
+      duration: 'set 2025 - atual',
       liveUrl: 'https://construtorapu.com.br',
       featured: true,
       highlights: [
         'Sou um dos quatro sócios, com participação igual, em uma incorporadora residencial MCMV em crescimento, financiada com capital privado',
         'Lidero finanças, revisão contratual, controle de custos e ferramentas operacionais voltadas aos corretores',
-        'Hoje a operação inclui um projeto de 14 unidades em fase final, com 11 de 14 unidades já reservadas',
-        'Um segundo projeto de 22 unidades já está em estágio inicial de execução, ampliando a operação em andamento',
+        'O portfólio MCMV ativo reúne 36 unidades: o DunaMar tem 14 apartamentos em fase final de acabamento e certificação, e o DunaMar 2 reúne 22 unidades em dois prédios de apartamentos e duas casas',
+        'Um empreendimento separado, liderado por investidores, com 36 apartamentos está em planejamento',
       ],
     },
     {

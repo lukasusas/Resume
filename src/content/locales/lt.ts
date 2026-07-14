@@ -4,11 +4,13 @@ export const ltContent: LocaleContent = {
   locale: 'lt',
   meta: {
     defaultDescription:
-      'Dirbu strategijos, operacijų, verslo plėtros, tarptautinės prekybos ir nekilnojamojo turto investicijų srityse.',
+      'Vadovauju dirbtinio intelekto transformacijai, dirbdamas komercinių operacijų, finansų, verslo plėtros, tarptautinės prekybos ir nekilnojamojo turto investicijų srityse.',
     keywords: [
       'strategija',
       'operacijos',
       'verslo plėtra',
+      'dirbtinio intelekto transformacija',
+      'DI diegimas',
       'B2B pardavimai',
       'nekilnojamasis turtas',
       'tarptautinė prekyba',
@@ -17,35 +19,60 @@ export const ltContent: LocaleContent = {
   },
   profile: {
     name: 'Lukas Usaris',
-    title: 'Komercijos ir operacijų vadovas | Finansai, strategija ir verslo plėtra',
+    title: 'Dirbtinio intelekto transformacijos vadovas | Komercinės operacijos ir DI diegimas',
     photo: '/profile/lukas-usaris.jpg',
     location: 'Vilnius, Lietuva',
     linkedin: 'https://linkedin.com/in/lukas-usaris',
     whatsapp: '+370 650 24544',
     summary:
-      'Dirbu komercinių operacijų srityje, apimančioje finansus, sutartis, verslo plėtrą ir darbą su pačių įkūrėjų valdomais verslais. Augimo planus ir sudėtingus sandorius paverčiu aiškiais veiksmais per finansinį planavimą, kainodarą, sutarčių priežiūrą ir santykių valdymą. Mano patirtis apima pajamoms kritiškai svarbias įmonių partnerystes, tarptautinę prekybą ir augantį privačiu kapitalu finansuojamą gyvenamojo NT vystymą Brazilijoje. Daugiausia vertės sukuriu ten, kur reikia sprendimų, atsakomybės ir aiškios komunikacijos.',
+      'Vadovauju Saige Consulting dirbtinio intelekto transformacijos verslo pusei, pavienius DI eksperimentus paversdamas pakartotinai naudojamais ir pamatuojamais darbo procesais klientų projektuose bei vidinėse operacijose. Mano patirtis apima komercines operacijas, finansus, sutartis, verslo plėtrą ir įkūrėjų valdomų verslų vystymą. Daugiausia dėmesio skiriu didžiausios vertės veiklos problemų nustatymui, žmonių bei techninių sprendimų derinimui ir sprendimų vertinimui pagal maržą, greitį, kokybę bei mastelį.',
     highlights: [
+      'Vadovauju Saige Consulting DI transformacijai: nuo pilotų parinkimo iki jų diegimo į veiklą',
       'Trejus metus iš eilės vedžiau derybas, uždariau ir išlaikiau daugiau nei 1 mln. EUR vertės kontraktus',
-      'Valdžiau apie 5 klientų paskyras, kurios sudarė 60-80 % metinių įmonės pajamų',
       'Esu vienas iš brangakmenių prekybos verslo įkūrėjų; per pirmus 12 mėnesių jis pasiekė šešiaženklę apyvartą',
       'Esu vienas iš augančios, privačiu kapitalu finansuojamos gyvenamojo NT vystymo įmonės Brazilijoje įkūrėjų',
     ],
   },
   experience: [
     {
+      id: 'exp-saige-ai',
+      title: 'Dirbtinio intelekto transformacijos vadovas',
+      company: 'Saige Consulting',
+      location: 'Vilnius, Lietuva / tarptautinė veikla',
+      type: 'pilnas etatas',
+      startDate: '2026-07',
+      current: true,
+      description:
+        'Vadovauju Saige Consulting DI transformacijos verslo pusei, pavienius DI eksperimentus paversdamas pakartotinai naudojamais ir pamatuojamais darbo procesais klientų projektuose, vidinėse operacijose bei, kai aktualu, grupės įmonėse. Nustatau didžiausios vertės veiklos problemas, apibrėžiu verslo logiką, sėkmės rodiklius, valdymo ir žmogaus peržiūros principus, o kartu su techninėmis komandomis koordinuoju sprendimų įgyvendinimą, testavimą ir plėtrą, siekdamas gerinti maržas, pristatymo greitį, kokybę ir mastelį.',
+      achievements: [
+        'Kuriu ir prioritetizuoju visos Saige Consulting DI transformacijos veiksmų planą, vertindamas poveikį verslui, įgyvendinamumą, riziką, pastangas, duomenų prieinamumą ir greitį, kuriuo galima patikrinti vertę',
+        'Vedu praktinius pilotus klientų projektuose ir vidinėse operacijose, siekdamas mažinti rankinį koordinavimą, pakartotinį darbą, kaštus ir vyresniųjų techninių specialistų apkrovą, neaukojant kokybės ar klientų pasitikėjimo',
+        'Nustatau pradinius rodiklius ir veiklos vertinimą pagal sutaupytas valandas, pristatymo greitį, maržas, kokybę, pakartotinio darbo apimtį, komandų naudojimą ir sprendimų pritaikymą kituose projektuose',
+        'Kuriu praktines taisykles dėl procesų atsakomybės, žmogaus patvirtinimo, kokybės peržiūros, eskalavimo ir DI darbo srautų pakartotinio naudojimo tarp komandų',
+        'Derinu vadovybės, globalių operacijų, techninių komandų ir projektų vadovų darbą, kad pasiteisinę pilotai taptų pakartotinai naudojamais veiklos modeliais',
+      ],
+      technologies: [
+        'DI transformacija',
+        'Darbo procesų dizainas',
+        'DI diegimas ir valdymas',
+        'Operaciniai rodikliai',
+        'Tarpfunkcinis koordinavimas',
+      ],
+    },
+    {
       id: 'exp-1',
       title: 'Vienas iš įkūrėjų, investuotojas ir finansų vadovas',
       company: 'Construtora PU',
       location: 'Paracuru, Ceará, Brazilija',
       type: 'nuosavas verslas',
-      startDate: '2025-01',
+      startDate: '2025-09',
       current: true,
       description:
         'Esu vienas iš įkūrėjų, investuotojas ir už finansus bei sutartis atsakingas vadovas privačiu kapitalu finansuojamoje Minha Casa Minha Vida (MCMV) gyvenamojo NT vystymo įmonėje Paracuru mieste, Ceará valstijoje. Mano vaidmuo labiau priežiūrinis ir patariamasis: prižiūriu finansinį planavimą, sutarčių peržiūrą, ataskaitas ir pardavimų palaikymo sistemas.',
       achievements: [
         'Esu vienas iš keturių lygiaverčių įkūrėjų augančioje, privačiu kapitalu finansuojamoje MCMV gyvenamojo NT vystymo įmonėje Paracuru',
         'Prižiūriu finansinį planavimą, kapitalo ir veiklos sąnaudų sekimą, rangovų sutarčių peržiūrą ir finansinės kontrolės patikras prieš tvirtinimą bei pasirašymą',
-        'Šiuo metu vystome 14 butų projektą, artėjantį prie pabaigos ir jau turintį 11 iš 14 rezervacijų, taip pat 22 vienetų projektą ankstyvoje įgyvendinimo stadijoje; abiejų projektų tikslinė grąža siekia apie 35-40 %, o ciklas trumpesnis nei metai',
+        'Aktyvų MCMV vystymą sudaro 36 būstai: DunaMar projekte 14 butų yra baigiamųjų darbų ir sertifikavimo stadijoje, parduoti likę tik 3-4 vienetai; DunaMar 2 projekte vystomi 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose, pirmasis korpusas artėja prie pabaigos, o antrasis jau statomas',
         'Kuriu ir prižiūriu veiklos įrankius: brokerių vienetų prieinamumo sekiklius, pardavimų medžiagą, interneto svetaines, skaičiuokles ir PDF ataskaitų šablonus',
       ],
       technologies: [
@@ -227,9 +254,9 @@ export const ltContent: LocaleContent = {
       slug: 'brazil-residential-development',
       title: 'Construtora PU - MCMV gyvenamojo būsto vystymas',
       description:
-        'Esu vienas iš privačiu kapitalu finansuojamos gyvenamojo NT vystymo įmonės Paracuru, Ceará, įkūrėjų; joje investuoju ir atsakau už finansus bei sutartis aktyviai vystomuose MCMV projektuose.',
+        'Esu vienas iš privačiu kapitalu finansuojamos gyvenamojo NT vystymo įmonės Paracuru, Ceará, įkūrėjų; joje investuoju ir atsakau už finansus bei sutartis aktyviame 36 būstų MCMV portfelyje.',
       longDescription:
-        'Construtora PU įmonėje esu vienas iš keturių lygiaverčių įkūrėjų augančiame, privačiu kapitalu finansuojamame gyvenamojo NT vystymo versle Paracuru mieste, Ceará valstijoje, Brazilijoje. Mano vaidmuo kaip investuotojo ir finansų vadovo yra labiau priežiūrinis bei patariamasis: prižiūriu finansinį planavimą, kapitalo ir veiklos sąnaudų sekimą, rangovų sutarčių peržiūrą ir veiklos įrankius brokeriams bei pardavimų komandai. Šiuo metu vystomi 2 Minha Casa Minha Vida (MCMV) projektai: 14 butų projektas, artėjantis prie pabaigos ir jau turintis 11 iš 14 rezervacijų, bei 22 vienetų projektas ankstyvoje įgyvendinimo stadijoje. Abu projektai vystomi trumpesniais nei metų ciklais, o tikslinė grąža siekia apie 35-40 %.',
+        'Construtora PU įmonėje esu vienas iš keturių lygiaverčių įkūrėjų augančiame, privačiu kapitalu finansuojamame gyvenamojo NT vystymo versle Paracuru mieste, Ceará valstijoje, Brazilijoje. Mano vaidmuo kaip investuotojo ir finansų vadovo yra labiau priežiūrinis bei patariamasis: prižiūriu finansinį planavimą, kapitalo ir veiklos sąnaudų sekimą, rangovų sutarčių peržiūrą ir veiklos įrankius brokeriams bei pardavimų komandai. Aktyvų MCMV portfelį sudaro 36 būstai: DunaMar projekte 14 butų yra baigiamųjų darbų ir sertifikavimo stadijoje, parduoti likę tik 3-4 vienetai; DunaMar 2 projekte vystomi 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose. Pirmasis DunaMar 2 korpusas artėja prie pabaigos, antrojo statybos jau pradėtos, o individualūs namai numatyti vėlesniam etapui. Atskiras 36 butų, investuotojams skirtas projektas yra planavimo stadijoje.',
       thumbnail: '/projects/brazil-residential-development.jpg',
       images: ['/projects/brazil-residential-development.jpg'],
       technologies: [
@@ -240,14 +267,14 @@ export const ltContent: LocaleContent = {
       ],
       category: 'Nekilnojamasis turtas',
       role: 'Vienas iš įkūrėjų, investuotojas ir finansų vadovas',
-      duration: '2025 - dabar',
+      duration: '2025 m. rugsėjis - dabar',
       liveUrl: 'https://construtorapu.com.br',
       featured: true,
       highlights: [
         'Esu vienas iš keturių lygiaverčių įkūrėjų augančioje, privačiu kapitalu finansuojamoje MCMV gyvenamojo būsto vystymo įmonėje',
         'Atsakau už finansus, sutarčių peržiūrą, sąnaudų sekimą ir brokeriams skirtus veiklos įrankius',
-        'Šiuo metu vystomas 14 butų projektas, artėjantis prie pabaigos ir jau turintis 11 iš 14 rezervacijų',
-        'Antrasis 22 vienetų projektas jau yra ankstyvoje įgyvendinimo stadijoje ir stiprina tolimesnį projektų augimą',
+        'Aktyvų MCMV portfelį sudaro 36 būstai: DunaMar projekte yra 14 butų baigiamųjų darbų ir sertifikavimo stadijoje, o DunaMar 2 projekte - 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose',
+        'Atskiras 36 butų, investuotojams skirtas projektas yra planavimo stadijoje',
       ],
     },
     {

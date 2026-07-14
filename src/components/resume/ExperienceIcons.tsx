@@ -1,5 +1,6 @@
 import {
   Building2,
+  Bot,
   Gem,
   Code2,
   Cloud,
@@ -13,6 +14,7 @@ interface ExperienceIconProps {
 
 export function ExperienceIcon({ experience }: ExperienceIconProps) {
   const iconMap: Record<string, React.ReactNode> = {
+    'exp-saige-ai': <Bot className="w-6 h-6" />,
     'exp-1': <Building2 className="w-6 h-6" />,
     'exp-2': <Gem className="w-6 h-6" />,
     'exp-3': <Code2 className="w-6 h-6" />,

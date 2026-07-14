@@ -4,11 +4,13 @@ export const enContent: LocaleContent = {
   locale: 'en',
   meta: {
     defaultDescription:
-      'I work across strategy, operations, business development, international trade, and real estate investment.',
+      'I lead AI transformation while working across commercial operations, finance, business development, international trade, and real estate investment.',
     keywords: [
       'strategy',
       'operations',
       'business development',
+      'AI transformation',
+      'AI-enabled operations',
       'B2B sales',
       'real estate investment',
       'international trade',
@@ -17,35 +19,60 @@ export const enContent: LocaleContent = {
   },
   profile: {
     name: 'Lukas Usaris',
-    title: 'Commercial Operator | Finance, Strategy & Business Development',
+    title: 'Head of AI Transformation | Commercial Operations & AI-Enabled Delivery',
     photo: '/profile/lukas-usaris.jpg',
     location: 'Vilnius, Lithuania',
     linkedin: 'https://linkedin.com/in/lukas-usaris',
     whatsapp: '+370 650 24544',
     summary:
-      'I work as a commercial operator across finance, contracts, business development, and founder-led execution. I help turn growth plans and complex deals into structured action through financial planning, pricing, contract oversight, and relationship management. My experience spans revenue-critical enterprise accounts, international trade, and growing privately funded residential development in Brazil, with a focus on owner-led work that requires judgment, follow-through, and clear communication.',
+      'I lead the business side of AI transformation across Saige Consulting, turning fragmented AI experiments into repeatable, measurable workflows for client delivery and internal operations. My background spans commercial operations, finance, contracts, business development, and founder-led execution. I focus on identifying high-value operational problems, aligning people and technical delivery, and evaluating value through margin, speed, quality, and scalability.',
     highlights: [
+      'Leading company-wide AI transformation at Saige Consulting, from pilot selection to workflow adoption',
       'I negotiated, closed, and retained EUR 1M+ contracts for 3 consecutive years',
-      'I managed roughly 5 accounts representing 60% to 80% of annual company revenue',
       'I co-founded a gemstone trading business that reached six-figure revenue in its first 12 months',
       'I co-founded a growing privately funded residential development business in Brazil',
     ],
   },
   experience: [
     {
+      id: 'exp-saige-ai',
+      title: 'Head of AI Transformation',
+      company: 'Saige Consulting',
+      location: 'Vilnius, Lithuania / Global',
+      type: 'full-time',
+      startDate: '2026-07',
+      current: true,
+      description:
+        'I lead the business side of AI transformation across Saige Consulting, turning fragmented AI experiments into repeatable, measurable workflows across client delivery, internal operations, and relevant group entities. I identify high-value operational problems, define the business case, success metrics, governance, and human-review requirements, then coordinate implementation, testing, and scaling with technical teams to improve margin, delivery speed, quality, and scalability.',
+      achievements: [
+        'Build and prioritize a company-wide AI transformation roadmap by evaluating workflows for business impact, feasibility, risk, effort, data availability, and speed of validation',
+        'Lead applied pilots across live client projects and internal operations to reduce manual coordination, rework, cost, and senior technical load while protecting quality and client trust',
+        'Define baseline metrics and performance tracking across hours saved, delivery speed, margin, quality, rework, team adoption, and reuse across projects',
+        'Establish practical rules for workflow ownership, human approval, quality review, escalation, and reuse of AI-enabled workflows across teams',
+        'Coordinate leadership, global operations, technical teams, and project owners to turn validated pilots into reusable playbooks and a scalable operating model',
+      ],
+      technologies: [
+        'AI Transformation',
+        'Workflow Design',
+        'AI Adoption & Governance',
+        'Operational Metrics',
+        'Cross-Functional Coordination',
+      ],
+    },
+    {
       id: 'exp-1',
       title: 'Co-Founder, Investor & Financial Manager',
       company: 'Construtora PU',
       location: 'Paracuru, Ceará, Brazil',
       type: 'owner-operated',
-      startDate: '2025-01',
+      startDate: '2025-09',
       current: true,
       description:
         'I am a co-founder, investor, and finance/contracts lead in a privately funded Minha Casa Minha Vida (MCMV) residential development business in Paracuru, Ceará. I work in a semi-passive advisory capacity across financial planning, contract review, reporting, and sales-support systems.',
       achievements: [
         'I am 1 of 4 equal founders in a growing privately funded MCMV residential development business in Paracuru, Ceará',
         'I oversee financial planning, capex and opex tracking, contractor contract review, and finance-control checks before approval and signing',
-        'The current pipeline includes a 14-unit project nearing completion with 11 of 14 units reserved, alongside a 22-unit project in early delivery, targeting roughly 35% to 40% gross ROI over sub-1-year cycles',
+        'Current active MCMV development covers 36 homes: DunaMar has 14 apartments in final finishing and certification, with only 3 to 4 units remaining for sale; DunaMar 2 has 22 homes across two apartment buildings and two private houses, with its first block nearing completion and second underway',
         'I built and manage operating tools including broker unit-availability trackers, sales materials, websites, spreadsheets, and PDF reporting tools',
       ],
       technologies: [
@@ -227,9 +254,9 @@ export const enContent: LocaleContent = {
       slug: 'brazil-residential-development',
       title: 'Construtora PU - MCMV Residential Development',
       description:
-        'I co-founded a privately funded residential development business in Paracuru, Ceará, acting as investor and finance/contracts lead across an active MCMV project pipeline.',
+        'I co-founded a privately funded residential development business in Paracuru, Ceará, acting as investor and finance/contracts lead across an active 36-home MCMV portfolio.',
       longDescription:
-        'At Construtora PU, I am one of 4 equal founders in a growing privately funded residential development business in Paracuru, Ceará, Brazil. I work in a semi-passive advisory capacity as investor and financial manager, overseeing financial planning, capex and opex tracking, contractor contract review, and operating tools for brokers and sales support. The current pipeline includes 2 Minha Casa Minha Vida (MCMV) projects: a 14-unit development nearing completion with 11 of 14 units reserved through mostly signed agreements, and a 22-unit project in early delivery. Both projects are planned around sub-1-year development cycles and gross ROI targets in the roughly 35% to 40% range.',
+        'At Construtora PU, I am one of 4 equal founders in a growing privately funded residential development business in Paracuru, Ceará, Brazil. I work in a semi-passive advisory capacity as investor and financial manager, overseeing financial planning, capex and opex tracking, contractor contract review, and operating tools for brokers and sales support. The active MCMV portfolio covers 36 homes: DunaMar, a 14-apartment development in final finishing and certification with only 3 to 4 units remaining for sale; and DunaMar 2, a 22-home mixed development across two apartment buildings and two private houses. DunaMar 2\'s first building is nearing completion, the second is under construction, and the private houses form a later phase. A separate investor-led 36-apartment project is in planning.',
       thumbnail: '/projects/brazil-residential-development.jpg',
       images: ['/projects/brazil-residential-development.jpg'],
       technologies: [
@@ -240,14 +267,14 @@ export const enContent: LocaleContent = {
       ],
       category: 'Real Estate',
       role: 'Co-Founder, Investor & Financial Manager',
-      duration: '2025 - Present',
+      duration: 'Sep 2025 - Present',
       liveUrl: 'https://construtorapu.com.br',
       featured: true,
       highlights: [
         'I am 1 of 4 equal founders in a growing privately funded MCMV residential development business',
         'I lead finance, contract review, expense tracking, and broker-facing operating tools for the business',
-        'The current pipeline includes a 14-unit project nearing completion with 11 of 14 units already reserved',
-        'A second 22-unit project is already in early delivery, supporting continued pipeline growth',
+        '36 active MCMV homes: DunaMar has 14 apartments in final finishing and certification, while DunaMar 2 has 22 homes across two apartment buildings and two private houses',
+        'A separate 36-apartment investor-led development is in planning',
       ],
     },
     {
