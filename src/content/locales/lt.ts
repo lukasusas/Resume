@@ -72,7 +72,7 @@ export const ltContent: LocaleContent = {
       achievements: [
         'Esu vienas iš keturių lygiaverčių įkūrėjų augančioje, privačiu kapitalu finansuojamoje MCMV gyvenamojo NT vystymo įmonėje Paracuru',
         'Prižiūriu finansinį planavimą, kapitalo ir veiklos sąnaudų sekimą, rangovų sutarčių peržiūrą ir finansinės kontrolės patikras prieš tvirtinimą bei pasirašymą',
-        'Aktyvų MCMV vystymą sudaro 36 būstai: DunaMar projekte 14 butų yra baigiamųjų darbų ir sertifikavimo stadijoje, parduoti likę tik 3-4 vienetai; DunaMar 2 projekte vystomi 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose, pirmasis korpusas artėja prie pabaigos, o antrasis jau statomas',
+        'Aktyvų MCMV vystymą sudaro 36 būstai: DunaMar projekte 14 butų yra baigiamųjų darbų ir sertifikavimo stadijoje; DunaMar 2 projekte vystomi 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose, pirmasis korpusas artėja prie pabaigos, o antrasis jau statomas',
         'Kuriu ir prižiūriu veiklos įrankius: brokerių vienetų prieinamumo sekiklius, pardavimų medžiagą, interneto svetaines, skaičiuokles ir PDF ataskaitų šablonus',
       ],
       technologies: [
@@ -256,7 +256,7 @@ export const ltContent: LocaleContent = {
       description:
         'Esu vienas iš privačiu kapitalu finansuojamos gyvenamojo NT vystymo įmonės Paracuru, Ceará, įkūrėjų; joje investuoju ir atsakau už finansus bei sutartis aktyviame 36 būstų MCMV portfelyje.',
       longDescription:
-        'Construtora PU įmonėje esu vienas iš keturių lygiaverčių įkūrėjų augančiame, privačiu kapitalu finansuojamame gyvenamojo NT vystymo versle Paracuru mieste, Ceará valstijoje, Brazilijoje. Mano vaidmuo kaip investuotojo ir finansų vadovo yra labiau priežiūrinis bei patariamasis: prižiūriu finansinį planavimą, kapitalo ir veiklos sąnaudų sekimą, rangovų sutarčių peržiūrą ir veiklos įrankius brokeriams bei pardavimų komandai. Aktyvų MCMV portfelį sudaro 36 būstai: DunaMar projekte 14 butų yra baigiamųjų darbų ir sertifikavimo stadijoje, parduoti likę tik 3-4 vienetai; DunaMar 2 projekte vystomi 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose. Pirmasis DunaMar 2 korpusas artėja prie pabaigos, antrojo statybos jau pradėtos, o individualūs namai numatyti vėlesniam etapui. Atskiras 36 butų, investuotojams skirtas projektas yra planavimo stadijoje.',
+        'Construtora PU įmonėje esu vienas iš keturių lygiaverčių įkūrėjų augančiame, privačiu kapitalu finansuojamame gyvenamojo NT vystymo versle Paracuru mieste, Ceará valstijoje, Brazilijoje. Mano vaidmuo kaip investuotojo ir finansų vadovo yra labiau priežiūrinis bei patariamasis: prižiūriu finansinį planavimą, kapitalo ir veiklos sąnaudų sekimą, rangovų sutarčių peržiūrą ir veiklos įrankius brokeriams bei pardavimų komandai. Aktyvų MCMV portfelį sudaro 36 būstai: DunaMar projekte 14 butų yra baigiamųjų darbų ir sertifikavimo stadijoje; DunaMar 2 projekte vystomi 22 būstai dviejuose daugiabučiuose ir dviejuose individualiuose namuose. Pirmasis DunaMar 2 korpusas artėja prie pabaigos, antrojo statybos jau pradėtos, o individualūs namai numatyti vėlesniam etapui. Atskiras 36 butų, investuotojams skirtas projektas yra planavimo stadijoje.',
       thumbnail: '/projects/brazil-residential-development.jpg',
       images: ['/projects/brazil-residential-development.jpg'],
       technologies: [

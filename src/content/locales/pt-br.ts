@@ -72,7 +72,7 @@ export const ptBrContent: LocaleContent = {
       achievements: [
         'Sou um dos quatro sócios, com participação igual, em uma incorporadora residencial MCMV em crescimento, financiada com capital privado, em Paracuru, Ceará',
         'Supervisiono planejamento financeiro, controle de despesas de capital e operacionais, revisão de contratos de empreiteiros e checagens financeiras antes de aprovação e assinatura',
-        'O desenvolvimento MCMV em andamento reúne 36 unidades: no DunaMar, 14 apartamentos estão em fase final de acabamento e certificação, com apenas 3 a 4 unidades restantes para venda; no DunaMar 2, são 22 unidades em dois prédios de apartamentos e duas casas, com o primeiro bloco próximo da conclusão e o segundo já em obra',
+        'O desenvolvimento MCMV em andamento reúne 36 unidades: no DunaMar, 14 apartamentos estão em fase final de acabamento e certificação; no DunaMar 2, são 22 unidades em dois prédios de apartamentos e duas casas, com o primeiro bloco próximo da conclusão e o segundo já em obra',
         'Crio e gerencio ferramentas operacionais como controles de disponibilidade para corretores, materiais de vendas, sites, planilhas e relatórios em PDF',
       ],
       technologies: [
@@ -256,7 +256,7 @@ export const ptBrContent: LocaleContent = {
       description:
         'Sou um dos fundadores de uma incorporadora residencial em Paracuru, Ceará, financiada com capital privado, onde atuo como investidor e responsável por finanças e contratos em um portfólio MCMV ativo de 36 unidades.',
       longDescription:
-        'Na Construtora PU, sou um dos quatro sócios, com participação igual, em um negócio de desenvolvimento residencial em crescimento, financiado com capital privado, em Paracuru, Ceará, Brasil. Como investidor e gestor financeiro, atuo em uma função mais consultiva e de supervisão, acompanhando planejamento financeiro, controle de despesas de capital e operacionais, revisão de contratos de empreiteiros e ferramentas operacionais para corretores e apoio comercial. O portfólio MCMV ativo reúne 36 unidades: o DunaMar, com 14 apartamentos em fase final de acabamento e certificação, tem apenas 3 a 4 unidades restantes para venda; o DunaMar 2 reúne 22 unidades em dois prédios de apartamentos e duas casas. O primeiro bloco do DunaMar 2 está próximo da conclusão, o segundo já está em obra e as casas formam uma etapa posterior. Um empreendimento separado, liderado por investidores, com 36 apartamentos está em planejamento.',
+        'Na Construtora PU, sou um dos quatro sócios, com participação igual, em um negócio de desenvolvimento residencial em crescimento, financiado com capital privado, em Paracuru, Ceará, Brasil. Como investidor e gestor financeiro, atuo em uma função mais consultiva e de supervisão, acompanhando planejamento financeiro, controle de despesas de capital e operacionais, revisão de contratos de empreiteiros e ferramentas operacionais para corretores e apoio comercial. O portfólio MCMV ativo reúne 36 unidades: o DunaMar, com 14 apartamentos em fase final de acabamento e certificação; o DunaMar 2 reúne 22 unidades em dois prédios de apartamentos e duas casas. O primeiro bloco do DunaMar 2 está próximo da conclusão, o segundo já está em obra e as casas formam uma etapa posterior. Um empreendimento separado, liderado por investidores, com 36 apartamentos está em planejamento.',
       thumbnail: '/projects/brazil-residential-development.jpg',
       images: ['/projects/brazil-residential-development.jpg'],
       technologies: [

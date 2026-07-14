@@ -72,7 +72,7 @@ export const enContent: LocaleContent = {
       achievements: [
         'I am 1 of 4 equal founders in a growing privately funded MCMV residential development business in Paracuru, Ceará',
         'I oversee financial planning, capex and opex tracking, contractor contract review, and finance-control checks before approval and signing',
-        'Current active MCMV development covers 36 homes: DunaMar has 14 apartments in final finishing and certification, with only 3 to 4 units remaining for sale; DunaMar 2 has 22 homes across two apartment buildings and two private houses, with its first block nearing completion and second underway',
+        'Current active MCMV development covers 36 homes: DunaMar has 14 apartments in final finishing and certification; DunaMar 2 has 22 homes across two apartment buildings and two private houses, with its first block nearing completion and second underway',
         'I built and manage operating tools including broker unit-availability trackers, sales materials, websites, spreadsheets, and PDF reporting tools',
       ],
       technologies: [
@@ -256,7 +256,7 @@ export const enContent: LocaleContent = {
       description:
         'I co-founded a privately funded residential development business in Paracuru, Ceará, acting as investor and finance/contracts lead across an active 36-home MCMV portfolio.',
       longDescription:
-        'At Construtora PU, I am one of 4 equal founders in a growing privately funded residential development business in Paracuru, Ceará, Brazil. I work in a semi-passive advisory capacity as investor and financial manager, overseeing financial planning, capex and opex tracking, contractor contract review, and operating tools for brokers and sales support. The active MCMV portfolio covers 36 homes: DunaMar, a 14-apartment development in final finishing and certification with only 3 to 4 units remaining for sale; and DunaMar 2, a 22-home mixed development across two apartment buildings and two private houses. DunaMar 2\'s first building is nearing completion, the second is under construction, and the private houses form a later phase. A separate investor-led 36-apartment project is in planning.',
+        'At Construtora PU, I am one of 4 equal founders in a growing privately funded residential development business in Paracuru, Ceará, Brazil. I work in a semi-passive advisory capacity as investor and financial manager, overseeing financial planning, capex and opex tracking, contractor contract review, and operating tools for brokers and sales support. The active MCMV portfolio covers 36 homes: DunaMar, a 14-apartment development in final finishing and certification; and DunaMar 2, a 22-home mixed development across two apartment buildings and two private houses. DunaMar 2\'s first building is nearing completion, the second is under construction, and the private houses form a later phase. A separate investor-led 36-apartment project is in planning.',
       thumbnail: '/projects/brazil-residential-development.jpg',
       images: ['/projects/brazil-residential-development.jpg'],
       technologies: [
